@@ -8,7 +8,7 @@ parentheses are balanced; otherwise, they are not. '''
 def is_balanced(s: str) -> bool:
     stack = []
     for char in s:
-        if char in "){[":
+        if char in "({[":
             stack.append(char)
         else:
             if not stack:
